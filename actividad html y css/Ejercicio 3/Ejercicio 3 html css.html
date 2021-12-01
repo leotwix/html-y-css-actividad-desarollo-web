@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ejercicio 3 - Formulario</title>
+	</head>
+
+	<body>
+		<form action="" method="POST">
+			1. Campo numeros (Maximo 10 caracteres)
+			<input type="number" onKeyDown="if(this.value.length==10 && event.keyCode!=8) return false;">
+<br><br>
+			2. 2 Campos texto (max 40 caracteres)
+			<input type="text" maxlength="40" name="">
+			<input type="text" maxlength="40" name="">
+<br><br>
+			3. Campo multilinea (max 200 char)
+			<textarea rows="3" maxlength="200"></textarea>
+<br><br>
+			4. Campo fecha
+			<input type="date" name="">
+<br><br>
+			5. Campo hora
+			<input type="time" name="">
+<br><br>
+			6. Seleccionar una casilla
+			<input type="checkbox" name="">
+<br><br>
+			7. Tres opciones, una radio: <br>
+			<input type="checkbox" name=""> Opcion 1
+			<input type="checkbox" name="">	Opcion 2					
+			<input type="checkbox" name="">	Opcion 3					
+			<input type="radio" name=""> Opcion radio
+<br><br>
+			8. Selecionar colores
+			<input type="color" name="">
+<br><br>
+			9. Ingresar email
+			<input type="email" name="">
+<br><br>
+			10. Lista desplegable
+			<select>
+				<option>Lista despegable</option>
+			</select>				
+<br><br>
+			11. Lista desplegable con opciones
+			<select>
+				<option>Opcion 1</option>
+				<option>Opcion 2</option>
+				<option>Opcion 3</option>
+
+			</select>
+
+<br><br>
+			12. Campo Texto que permita seleccionar coincidencias
+			<input list="test">
+<datalist id="test">
+  <option value="hola">
+  <option value="profesor">
+  <option value="web">
+  <option value="internet">
+  <option value="chrome">
+</datalist>  
+
+		</form>
+	</body>
+</html>
